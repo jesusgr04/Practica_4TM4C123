@@ -1,0 +1,28 @@
+{
+  //  Use IntelliSense para obtener información sobre posibles atributos.
+  //  Desplácese para ver las descripciones de los atributos existentes.
+  //  Para obtener más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
+    "versión": "0.2.0",
+    "configuraciones": [
+    {
+    "name": "(gdb) Launch", "type": "cppdbg",
+    "request": "launch",
+    "miDebuggerPath": "C:\\Archivos de programa (x86)\\GNU Arm Embedded Toolchain\\10 2021.10\\bin\\arm-none-eabi-gdb.exe",
+    "targetArchitecture": "arm",
+    "filterStderr": true,
+    "serverStarted": "Info\\ :\\ [\\w\\d\\.] *:\\ hardware",
+    "programa": "C:\\Users\\jesus\\Documents\\Microcontrladores\\Practicas_7mo\\Practica_3TM4C123\\gcc\\main.axf",
+    "args": [],
+    "stopAtEntry": false,
+    "cwd": "${workspaceRoot}",
+    "medio ambiente": [],
+    "externalConsole": true,
+    "MIMode": "gdb",
+    "setupCommands": [
+    { "text" : "target extended-remote :3333"},
+    { "text" : "monitor halt"},
+    { "text" : "load C:/Users/jesus/Documents/Microcontrladores/Practicas_7mo/Practica_4TM4C123/gcc/main.axf"}
+    ]
+    }
+    ]
+}
